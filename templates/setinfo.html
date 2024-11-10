@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Athena</title>
+        <link href="/static/style4.css" rel="stylesheet" type="text/css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Sedan+SC&family=Sedan:ital@0;1&family=Silkscreen:wght@400;700&family=Tiny5&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Doto:wght@100..900&family=Sedan+SC&family=Sedan:ital@0;1&family=Silkscreen:wght@400;700&family=Tiny5&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <button id="return" class="rtrn" onclick="returnHome()">Return to home</button>
+        <h1 class="title">SET INFO</h1>
+        <div class="infoHolder">
+            <div class="insDivs">
+                <h1 id="name" class="name"></h1>
+                <img id="pfp">
+            </div>
+            <div class="insDivs">
+                <h3 id="desc" class="desc"></h3>
+                <button class="insBtn" id="test">test</button>
+                <br>
+                <br>
+                <button class="insBtn" id="delete">delete</button>
+                <div id="cnfrm">
+                    <h3 class="cnfrmh3">You sure you want to delete this?</h3>
+                    <h3 class="cnfrmh3">This can't be undone.</h3>
+                    <button id="cnfrmDel">delete</button>
+                    <br>
+                    <br>
+                    <button id="cnclDel" onclick="cnclDel()">nevermind</button>
+                </div>
+            </div>
+        </div>
+        <script src="/static/script2.js"></script>
+        <script type="text/javascript">
+            window.onload = function(){
+                loadStngs({{testset|tojson}});
+            }
+        </script>
+    </body>
+</html>

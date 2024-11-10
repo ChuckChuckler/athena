@@ -1,0 +1,142 @@
+@keyframes fadein{
+    from{background-color: rgba(52, 35, 89, 1);background-blend-mode: lighten;}
+    to{background-color: rgba(52, 35, 89, 0);background-blend-mode: normal;}
+}
+
+@keyframes googleslidesAhh{
+    from{top: 200px;}
+    to{top: 0px}
+}
+
+.spawnpointBg{
+    background-blend-mode: normal;
+    background-image: url('https://wallpapers.com/images/hd/disseminated-stars-in-the-galaxy-background-6j6bliaq1agycjsr.jpg');
+    animation-name: fadein;
+    animation-duration: 2s;
+}
+
+body{
+    background-color: #342359;
+    overflow: hidden;
+}
+
+.holder{
+    width: 80%;
+    height: 35vw;
+    background-color: #23152e;
+    text-align: center;
+    overflow: hidden;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    animation-name: googleslidesAhh;
+    animation-duration: 2s;
+}
+
+.holder:hover{
+    width: 82%;
+    height: 37vw;
+    background-color: #342359;
+}
+
+h1{
+    color: #e3bdfc;
+    text-decoration: underline;
+    font-size: 10vw;
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    margin: auto;
+}
+
+h3{
+    color: #e3bdfc;
+    font-size: 3vw;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 400;
+}
+
+.title{
+    color: #e3bdfc;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 30px;
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.logup{
+    background-color: #2d193b;
+    width: 40%;
+    height: 500px;
+    box-sizing: border-box;
+    padding: 3%;
+    border-radius: 5%;
+}
+
+.logup:hover{
+    width: 41%;
+    height: 505px;
+    background-color: #23152e;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+label{
+    color: #e3bdfc;
+    font-size: 3vw;
+    font-weight: bold;
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+input{
+    width: 90%;
+    height: 20%;
+    border-radius: 10px;
+    color: #2d193b;
+    font-size: 20px;
+}
+
+.coolbutton{
+    height: 8vw;
+}
+
+.coolbutton:hover{
+    height: 9vw;
+}
+
+button{
+    width: 90%;
+    height: 100px;
+    border-radius: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #8e6fd1;
+    color: #3c2b5e;
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+button:hover{
+    width: 92%;
+    height: 105px;
+    background-color: #533d82;
+    color: #a27eed;
+}
+
+p{
+    text-align: center;
+    font-size: 20px;
+    color: #e3bdfc;
+    font-family: 'Courier New', Courier, monospace;
+}

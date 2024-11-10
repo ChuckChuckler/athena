@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Athena- Main</title>
+        <link href="/static/style2.css" rel="stylesheet" type="text/css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Sedan+SC&family=Sedan:ital@0;1&family=Silkscreen:wght@400;700&family=Tiny5&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Doto:wght@100..900&family=Sedan+SC&family=Sedan:ital@0;1&family=Silkscreen:wght@400;700&family=Tiny5&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="hdrFlex">
+            <h1 id="greeting" class="left">Hello, </h1>
+            <h1 id="dateTime" class="right"></h1>
+        </div>
+
+        <div id="btnHolder" name="btnHolder" class="btnHolder">
+            <button onclick="create()" id="createbtn" class="createbtn">+</button>
+        </div>
+
+        <script src="/static/script2.js"></script>
+        <script type="text/javascript">
+            window.onload = function(){
+                load({{username|tojson}}, {{setsJson|tojson}});
+            }
+        </script>
+    </body>
+</html>

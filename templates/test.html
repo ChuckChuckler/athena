@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Athena- Test</title>
+        <link href="/static/style5.css" rel="stylesheet" type="text/css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Sedan+SC&family=Sedan:ital@0;1&family=Silkscreen:wght@400;700&family=Tiny5&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Doto:wght@100..900&family=Sedan+SC&family=Sedan:ital@0;1&family=Silkscreen:wght@400;700&family=Tiny5&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <button id="return" onclick="returnHome()" class="rtrn">Return to home</button>
+        <h1 id="setName"></h1>
+        <div id="test" name="test" class="test">
+            <div>
+                <p id="qNums"></p>
+                <h2 id="question"></h2>
+                <input type="radio" name="option" value="a" id="choice1">
+                <label for="choice1" id="a"></label>
+                <br>
+                <input type="radio" name="option" value="b" id="choice2">
+                <label for="choice2" id="b"></label>
+                <br>
+                <input type="radio" name="option" value="c" id="choice3">
+                <label for="choice3" id="c"></label>
+                <br>
+                <input type="radio" name="option" value="d" id="choice4">
+                <label for="choice4" id="d"></label>
+                <br>
+                <br>
+                <button onclick="checkAnswer()" id="checkBtn">Check</button>
+                <p id="correct"></p>
+                <button onclick="testSet()" id="nextBtn">Next</button>
+                <br>
+                <h3 id="stats"></h3>
+            </div>
+        </div>
+        <script src="/static/script2.js"></script>
+        <script type="text/javascript">
+            window.onload = function(){
+                setup({{testset|tojson}});
+            }
+        </script>
+    </body>
+</html>

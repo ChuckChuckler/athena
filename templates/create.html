@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Athena- Create</title>
+        <link href="/static/style3.css" rel="stylesheet" type="text/css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Sedan+SC&family=Sedan:ital@0;1&family=Silkscreen:wght@400;700&family=Tiny5&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Doto:wght@100..900&family=Sedan+SC&family=Sedan:ital@0;1&family=Silkscreen:wght@400;700&family=Tiny5&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div>
+            <button id="return" onclick="returnHome()">Return to home</button>
+            <h1>LET'S GET STARTED!</h1>
+        </div>
+        <br>
+        <div id="createDiv" name="createDiv" class="crtDiv">
+            <div class="innerDivs">
+                <label for="setname">name</label>
+                <br>
+                <input type="text" name="setname" id="setname" autocomplete="off" maxlength="20">
+                <br>
+                <label for="setpfp">picture (image address)</label>
+                <br>
+                <input type="text" name="setpfp" id="setpfp" onchange="updatepfp()" autocomplete="off">
+                <br>
+                <br>
+                <img id="pfp" onchange="dblCheck()" src="https://www.kurin.com/wp-content/uploads/placeholder-square.jpg">
+                <p class="info">image preview</p>
+            </div>
+            <div class="innerDivs">
+                <label for="desc">description</label>
+                <br>
+                <textarea id="desc" name="desc" autocomplete="off" maxlength="50"></textarea>
+                <br>
+                <label for="dgtlNotes">copy and paste notes here</label>
+                <br>
+                <textarea id="dgtlNotes" name="dgtlNotes" autocomplete="off" class="cnp"></textarea>
+                <br>
+                <label for="number">number of questions</label>
+                <br>
+                <input id="number" type="number" min="10" max="50" autocomplete="off" onchange="checkNum()">
+                <br>
+                <br>
+                <button onclick="send()">create</button>
+            </div>
+        </div>
+        <p id="errMsg" class="info"></p>
+        <script src="/static/script2.js"></script>
+    </body>
+</html>

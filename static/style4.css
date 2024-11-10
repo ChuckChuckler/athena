@@ -1,0 +1,83 @@
+body{
+    background-color: #342359;
+    overflow: hidden;
+}
+button{
+    background-color: #e3bdfc;
+    height: 40px;
+    width: 50vw;
+    border-radius: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #2d193b;
+    font-weight: 900;
+}
+
+button:hover{
+    background-color: #b291c7;
+    height: 45px;
+    width: 50.5vw;
+}
+
+.title{
+    text-align: center;
+    color: #e3bdfc;
+    font-family: "Silkscreen", sans-serif;
+}
+
+.name{
+    color: #e3bdfc;
+    text-align: center;
+    font-size: 3.5vw;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.infoHolder{
+    background-color:#2d193b;
+    height: 500px;
+    display: flex;
+    justify-content: left;
+    box-sizing: border-box;
+}
+
+img{
+    height: 25vw;
+    width: 25vw;
+    display: block;
+    margin: auto;
+}
+
+img:hover{
+    height: 26vw;
+    width: 26vw;
+}
+
+.desc{
+    color: #e3bdfc;
+    font-size: 3vw;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.cnfrmh3{
+    color: #e3bdfc;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.rtrn{
+    background-color: #e3bdfc;
+    height: 40px;
+    width: 15vw;
+    border-radius: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #2d193b;
+    font-weight: 900;
+}
+
+.rtrn:hover{
+    background-color: #b291c7;
+    height: 45px;
+    width: 15.5vw;
+}
+
+.insDivs{
+    width: 49%;
+}
