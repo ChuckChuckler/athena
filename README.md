@@ -2,7 +2,7 @@
 For my fellow students who struggle with finding online practice for their upcoming quizzes or tests, here's Athena!
 It's a quick little project that I made in a week or so for High Seas :3
 
-If you're running this on VSCode or any other software for whatever reason, just make sure to set up the virtualenv + download the necessary packages (Flask (pip install flask) and gemini api (pip install -q -U google-generativeai)).
+If you're running this on VSCode or any other software for whatever reason, just make sure to set up the virtualenv + download the necessary packages (Flask (pip install flask) and gemini api (pip install -q -U google-generativeai)). Replace the apikey variable with your own api key (you can get one for free, just check out geminiapi instructions)
 
 Or better yet, just check out https://sharma39avishi.pythonanywhere.com/ to actually use the project.
 
