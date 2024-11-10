@@ -3,7 +3,9 @@ import hashlib
 import sqlite3
 import google.generativeai as genai
 
-genai.configure(api_key="AIzaSyDdySxmQuJ52O8SQgZvq9HPK8euC7nz_bc")
+apikey = "" #replace with actual api key
+
+genai.configure(api_key=apikey)
 
 user = ""
 passw = ""
